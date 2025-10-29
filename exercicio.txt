@@ -1,0 +1,40 @@
+'''Atividade em dupla, a ser realizada em aula, entre os dias: 22, 23 e 29 e 30 (10/2025 ). A dupla deve enviar os nomes e RAs de seus integrantes no classroom no dia de sua avaliação.
+Contexto do Problema
+Suponha que você foi contratado(a) para desenvolver um sistema de gerenciamento de locadora (de algo de seu interesse), em um ambiente virtual (VENV) Python. O sistema precisa gerenciar locações, realizar cobranças e calcular multas por atraso. Realize um ou mais testes para sua aplicação.
+Requisitos do Sistema Exemplo
+
+A. Modelagem POO (Capítulo 7):
+### Criar classe do objeto a ser alugado (Imóvel, carro… (exceto livro, porque é o exemplo aqui definido))###
+
+    Criar classe Livro com:
+        Atributos: titulo, autor, isbn, disponivel (boolean)
+        Métodos: emprestar(), devolver()
+
+    Criar classe Usuario com:
+        Atributos: nome, id, livros_emprestados (lista)
+        Métodos: pegar_emprestado(livro), devolver_livro(livro)
+
+B. Dependências Externas (Capítulo 8):
+    Usar ambiente virtual para o projeto
+    Instalar biblioteca datetime via pip para calcular multas
+    Criar arquivo requirements.txt
+
+C. Testes e Tratamento de Erros (Capítulo 9):
+    Criar testes unitários com pytest
+    Implementar tratamento de exceções para casos como:
+        Tentar emprestar livro indisponível
+        Tentar devolver livro não emprestado
+        Usuário exceder limite de empréstimos
+
+Tarefas Específicas
+    Implemente as classes Livro e Usuario seguindo princípios de POO
+    Crie um ambiente virtual e configure as dependências
+    Escreva testes unitários para validar os métodos principais
+    Implemente tratamento de exceções para casos de erro
+    Crie um arquivo biblioteca.py com exemplo de uso
+
+Informações Técnicas Relevantes
+    Limite de empréstimos por usuário: 3 livros
+    Multa por atraso: R$ 1,00 por dia
+    Use datetime.timedelta para cálculos de data
+'''
